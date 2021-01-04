@@ -1,7 +1,7 @@
 * {
+   box-sizing: border-box;
    margin: 0;
    padding: 0; 
-   box-sizing: border-box;
 }  
 body {
     /* more on this crazy alphanumerical value in a minute! */
@@ -10,22 +10,23 @@ body {
   }
   /* apply styles to <header> */
 header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #39a6b2;
   }
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
-    display: inline;
 }
 header a {
     text-decoration: none;
     color: #fce138;
 }
 header nav {
-    float: right;
     margin: 7px 0;
 }
 header nav ul li {
@@ -61,10 +62,10 @@ section {
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
     position: relative;
+    height: 600px;
 }
 /* Hero Style End */
 .hero-form {
@@ -111,8 +112,8 @@ section {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
-    font-size: 20px;
     margin: 0 auto;
+    font-size: 20px;
 }
 .steps {
     text-align: center;
@@ -139,11 +140,11 @@ section {
 }
 .section-title {
     font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
     display: inline-block;
+    padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
+    margin-bottom: 35px;
+    color: #024e76;
 }
 .primary-border {
     border-color: #fce138;
