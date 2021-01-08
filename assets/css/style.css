@@ -295,6 +295,19 @@ color: #fce138;
     display: flex;
 }
 
+/* GRID format */
+
+.service-grid-container {
+    display: grid;
+}
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
@@ -343,6 +356,8 @@ header h1 {
   }
 }
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
 @media screen and (max-width: 768px) {
 
     section {
@@ -372,6 +387,8 @@ header h1 {
     }
   
   }
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
   @media screen and (max-width: 575px) {
 
